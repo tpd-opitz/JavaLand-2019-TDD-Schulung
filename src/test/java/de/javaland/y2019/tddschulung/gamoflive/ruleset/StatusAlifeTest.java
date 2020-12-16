@@ -53,10 +53,7 @@ class StatusAlifeTest {
 		Collection<GridCellState> twoAlieNeigbourStates = Arrays.asList(dead, dead, alive, dead, alive, dead, alive,
 				dead);
 
-		// act
 		GridCellState result = state.calculateNext(twoAlieNeigbourStates);
-
-		// assert
 		assertEquals(state, result, "returns itself");
 	}
 	
